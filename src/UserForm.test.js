@@ -28,7 +28,7 @@ test("it calls onUserAdd when the form is submitted", async () => {
   await user.click(nameInput);
   await user.keyboard("jane");
 
-  // Simulate typing in an email18. Introducing Mock Functions
+  // Simulate typing in an email
   await user.click(emailInput);
   await user.keyboard("jane@jane.com");
 
