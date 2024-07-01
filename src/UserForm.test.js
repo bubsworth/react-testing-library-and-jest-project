@@ -18,6 +18,11 @@ test("it shows two inputs and a button", () => {
 
 test("it calls onUserAdd when the form is submitted", async () => {
   // NOT THE BEST IMPLEMENTATION
+  const argList = [];
+  const callback = (...args) => {
+    argList.push(args);
+  };
+
   // Try to render my component
   render(<UserForm />);
 
