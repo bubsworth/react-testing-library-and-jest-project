@@ -44,4 +44,6 @@ test("it calls onUserAdd when the form is submitted", async () => {
   user.click(button);
 
   // Assertion to make sure 'onUserAdd' gets called with email/name
+  expect(argList).toHaveLength(1);
+  expect(argList[0][0]).toEqual({ name: "jane", email: "jane@jane.com" });
 });
