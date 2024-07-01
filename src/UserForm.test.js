@@ -24,7 +24,7 @@ test("it calls onUserAdd when the form is submitted", async () => {
   };
 
   // Try to render my component
-  render(<UserForm />);
+  render(<UserForm onUserAdd={callback} />);
 
   // Find the two inputs
   const [nameInput, emailInput] = screen.getAllByRole("textbox");
